@@ -475,6 +475,7 @@ ngx_http_lua_io_open(lua_State *L)
                                |NGX_HTTP_LUA_CONTEXT_CONTENT
                                |NGX_HTTP_LUA_CONTEXT_TIMER
                                |NGX_HTTP_LUA_CONTEXT_SSL_CERT
+                               |NGX_HTTP_LUA_CONTEXT_SSL_CLIENT_HELLO
                                |NGX_HTTP_LUA_CONTEXT_SSL_SESS_FETCH);
 
     if (ngx_get_full_name(r->pool, (ngx_str_t *) &ngx_cycle->prefix, &path)
